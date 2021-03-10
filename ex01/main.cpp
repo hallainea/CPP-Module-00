@@ -6,18 +6,18 @@
 /*   By: ahallain <ahallain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 23:30:13 by ahallain          #+#    #+#             */
-/*   Updated: 2021/03/09 16:57:42 by ahallain         ###   ########.fr       */
+/*   Updated: 2021/03/10 22:29:13 by ahallain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "phonebook.hpp"
 
-int		main(void)
+int main(void)
 {
-	PhoneBook	phonebook;
-	bool		stop;
-	std::string	input;
+	PhoneBook phonebook;
+	bool stop;
+	std::string input;
 
 	std::cout << "Welcome to my superb phone book. :D" << std::endl;
 	std::cout << "You can execute several commands (without arguments):" << std::endl;
@@ -39,4 +39,4 @@ int		main(void)
 	if (std::cin.eof())
 		std::cout << std::endl;
 	return (0);
-};
+}

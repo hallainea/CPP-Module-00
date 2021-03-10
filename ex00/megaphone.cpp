@@ -6,14 +6,14 @@
 /*   By: ahallain <ahallain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 22:51:42 by ahallain          #+#    #+#             */
-/*   Updated: 2021/03/09 16:29:50 by ahallain         ###   ########.fr       */
+/*   Updated: 2021/03/10 19:26:03 by ahallain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <cstring>
 
-int	main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	if (argc < 2)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";

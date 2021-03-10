@@ -6,7 +6,7 @@ NAME				=	megaphone
 COMPILE				=	clang++
 REMOVE				=	rm -f
 
-COMPILATION_FLAGS	=	-Wall -Wextra -Werror
+COMPILATION_FLAGS	=	-Wall -Wextra -Werror -std=c++98 -pedantic-errors
 
 .cpp.o:
 	${COMPILE} ${COMPILATION_FLAGS} -c $< -o ${<:.cpp=.o}
