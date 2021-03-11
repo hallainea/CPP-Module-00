@@ -6,7 +6,7 @@
 /*   By: ahallain <ahallain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/09 12:55:15 by ahallain          #+#    #+#             */
-/*   Updated: 2021/03/10 19:26:43 by ahallain         ###   ########.fr       */
+/*   Updated: 2021/03/11 12:29:13 by ahallain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,10 @@ void PhoneBook::search(void)
 	std::cout << "Which contact would you like to see?" << std::endl;
 	std::cout << "index: ";
 	std::getline(std::cin, input);
-	index = std::atoi(input.c_str());
+	if (input.length() == 1 && input[0] >= '0' && input[0] <= '9')
+		index = input[0] - '0';
+	else
+		index = -1;
 	if (index < 0 || index >= amount)
 	{
 		std::cout << "Invalid index :/" << std::endl;
